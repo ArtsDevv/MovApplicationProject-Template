@@ -134,16 +134,19 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de
 
 # Matriz de Rastreabilidade
 
-A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualização dos relacionamento entre requisitos e outros artefatos ou objetos, permitindo a rastreabilidade entre os requisitos e os objetivos de negócio. 
+## Matriz de Rastreabilidade dos Requisitos
 
-A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
-
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
-
-> **Links Úteis**:
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
+| ID | Requisito Funcional | Origem (História de Usuário) | RNF Vinculado |
+| :--- | :--- | :--- | :--- |
+| **RF-001** | Cadastro e identificação | Consumidor: cadastrar no app <br> Pintor: cadastrar como parceiro | RNF-004, RNF-010 |
+| **RF-003** | Consentimento de dados | Consumidor: autorizar o contato | RNF-010 (LGPD) |
+| **RF-005** | Importação do histórico | Lojista: importar relatório RTF do Softcom | RNF-001, RNF-003 |
+| **RF-006** | Cálculo de repintura | Consumidor: registrar o que pintei <br> Lojista: visualizar clientes na hora de repintar | RNF-001, RNF-009 |
+| **RF-007** | Notificações para clientes | Consumidor: receber lembrete no app (notificação local) | RNF-009 |
+| **RF-008** | Comunicação via WhatsApp | Consumidor: acionar loja por mensagem pronta <br> Lojista: disparar lembretes de recompra | RNF-002, RNF-005 |
+| **RF-009** | Catálogo de recompensas | Consumidor: acumular/resgatar pontos <br> Pintor: obter benefícios por fidelidade | RNF-001, RNF-008 |
+| **RF-011** | Cadastro de pintores | Pintor: cadastrar como parceiro | RNF-004 |
+| **RF-014** | Gerenciamento administrativo | Lojista: acompanhar indicadores e gerenciar pintores | RNF-004 |
 
 
 # Gerenciamento de Projeto
